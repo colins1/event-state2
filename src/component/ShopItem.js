@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Items from './Items';
 
 function ListView (props) {
     return (
-        <div className='poductSectorList'>{props.products[0].name}</div>
+        <div className='poductSectorList'><h2>{props.products}</h2></div>
     )
 }
 

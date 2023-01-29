@@ -1,5 +1,6 @@
 import React from 'react';
 import './../App.css';
+import Items from './Items';
 //import PropTypes from 'prop-types';
 
 function IconSwitch (props) {

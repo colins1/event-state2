@@ -4,7 +4,7 @@ import React from 'react';
 import IconSwitch from './IconSwitch';
 import CardsView from './CardsView';
 import ListView from './ListView';
-import Items from './Items';
+import {products} from './Items';
 import ShopCard from './ShopCard';
 import ShopItem from './ShopItem';
 
@@ -14,7 +14,6 @@ class Store extends React.Component {
         this.state = {
             icon: "view_list"
         }
-        let {products} = Items
         this.products = products;
     }
 
