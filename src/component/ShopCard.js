@@ -3,7 +3,7 @@ import React from 'react';
 
 function ListView (props) {
     return (
-        <div className='poductSectorCard'>{props.products}</div>
+        <div className='poductSectorCard'>{props.products[0].name}</div>
     )
 }
 

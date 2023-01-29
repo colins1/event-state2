@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ListView (props) {
     return (
-        <div className='poductSectorList'>{props.products}</div>
+        <div className='poductSectorList'>{props.products[0].name}</div>
     )
 }
 

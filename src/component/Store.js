@@ -21,7 +21,7 @@ class Store extends React.Component {
     render() {
         return (
             <div>
-                <IconSwitch icon={this.state.icon} onSwitch={this.state.icon == "view_list" ? this.setState({icon: "view_module"}) : this.setState({icon: "view_list"})} />
+                <IconSwitch icon={this.state.icon} onSwitch={() => {this.state.icon == "view_list" ? this.setState({icon: "view_module"}) : this.setState({icon: "view_list"})}} />
                 {this.state.icon === "view_module" ? <CardsView cards={<ShopCard products={this.products} />} /> : <ListView items={<ShopItem products={this.products} />} />}
             </div>
         )
