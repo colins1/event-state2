@@ -1,6 +1,6 @@
 import '../App.css';
 import React from 'react';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import IconSwitch from './IconSwitch';
 import CardsView from './CardsView';
 import ListView from './ListView';
@@ -28,3 +28,7 @@ class Store extends React.Component {
 }
 
 export default Store
+
+Store.propTypes = {
+    products: PropTypes.array.isRequired
+}

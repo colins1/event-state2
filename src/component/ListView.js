@@ -1,6 +1,5 @@
 import React from 'react';
-import Items from './Items';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function ListView (props) {
     return (
@@ -9,3 +8,7 @@ function ListView (props) {
 }
 
 export default ListView;
+
+ListView.propTypes = {
+    items: PropTypes.instanceOf(Object).isRequired
+}

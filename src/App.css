@@ -4,7 +4,48 @@
   text-align: center;
 }
 
+.poductsSectorCard {
+  display: flex;
+  flex-wrap:wrap;
+}
 
+.imgList {
+  height: 200px;
+  width: 200px;
+}
+
+.poductSectorCard {
+  margin: 20px;
+  height: 300px;
+  width: 30%;
+}
+
+.poductsSectorList {
+  flex-wrap:wrap;
+}
+
+.poductSectorList {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  width: 100%;
+  height: 200px;
+  background-color: #d7d7d7;
+}
+
+.title > p {
+  text-align: center;
+}
+
+.block-buy {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 33%;
+}
+
+h2 {
+  text-align: center;
+}
 
 .App-logo {
   height: 40vmin;

@@ -1,21 +1,30 @@
 import React from 'react';
-import Items from './Items';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-function ListView (props) {
+function ShopCard (props) {
+    const {products} = props
+    let arreyProd = products.map((product, i) =>
+        <div key={i} className='poductSectorCard' style={{ backgroundImage: `url("${product.img}")`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+        <div className="title">
+            <h2>{product.name}</h2>
+            <p>{product.color}</p>
+        </div>
+        <div className="block-buy">
+            <p>${product.price}</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+   )
+
     return (
-        <div className='poductSectorCard'>
-            <img src={props.products[0].img}/>
-            <div>
-                <h2>{props.products[0].name}</h2>
-                <p>{props.products[0].color}</p>
-            </div>
-            <div>
-                <p>{props.products[0].price}</p>
-                <button>ADD TO CART</button>
-            </div>
+        <div className='poductsSectorCard'>
+            {arreyProd}
         </div>
     )
 }
 
-export default ListView;
+export default ShopCard;
+
+ShopCard.propTypes = {
+    products: PropTypes.array.isRequired
+}

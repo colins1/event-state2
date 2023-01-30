@@ -1,6 +1,5 @@
 import React from 'react';
-import Items from './Items';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function CardsView (props) {
     return (
@@ -9,3 +8,7 @@ function CardsView (props) {
 }
 
 export default CardsView;
+
+CardsView.propTypes = {
+    cards: PropTypes.instanceOf(Object).isRequired
+}
